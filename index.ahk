@@ -1,9 +1,17 @@
+;#Persistent
+;#InstallKeybdHook
+;KeyHistory
+
 CapsLock::
     Send, {vk15sc138}
 Return
 
 ~LAlt & Escape::
-    Send, ~
+    if GetKeyState("Shift") {
+        Send, ~
+    }else{
+        Send, ``
+    }
 Return
 
 ~LAlt & C::
