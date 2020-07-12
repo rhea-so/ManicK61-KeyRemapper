@@ -31,19 +31,35 @@ Return
 Return
 
 ~LAlt & vk15::
-    Send, {Left}
+    if GetKeyState("Shift") {
+        Send, +{Left}
+    }else {
+        Send, {Left}
+    }
 Return
 
 ~LAlt & vk19::
-    Send, {Right}
+    if GetKeyState("Shift") {
+        Send, +{Right}
+    }else {
+        Send, {Right}
+    }
 Return
 
 ~LAlt & vkBF::
-    Send, {Up}
+    if GetKeyState("Shift") {
+        Send, +{Up}
+    }else {
+        Send, {Up}
+    }
 Return
 
 ~LAlt & vk5D::
-    Send, {Down}
+    if GetKeyState("Shift") {
+        Send, +{Down}
+    }else {
+        Send, {Down}
+    }
 Return
 
 ~LAlt & 1::
