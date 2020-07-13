@@ -131,7 +131,11 @@ Return
 Return
 
 ~LAlt & vk4C::
-    Send, {Home}
+    if GetKeyState("Shift") {
+        Send, +{Home}
+    }else {
+        Send, {Home}
+    }
 Return
 
 ~LAlt & vk4B::
@@ -139,11 +143,23 @@ Return
 Return
 
 ~LAlt & vkBE::
-    SoundSet, +5
+    if GetKeyState("Shift") {
+        Send, +{End}
+    }else{
+        Send, {End}
+    }
 Return
 
 ~LAlt & vkBC::
-    SoundSet, -5
+    Send, {Delete}
+Return
+
+~LAlt & I::
+    Send, SoundSet, -5
+Return
+
+~LAlt & U::
+    Send, SoundSet, +5
 Return
 
 LAlt::
