@@ -155,11 +155,11 @@ Return
 Return
 
 ~LAlt & I::
-    Send, SoundSet, -5
+    SoundSet, -5
 Return
 
 ~LAlt & U::
-    Send, SoundSet, +5
+    SoundSet, +5
 Return
 
 LAlt::
